@@ -20,7 +20,6 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [

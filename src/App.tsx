@@ -1,8 +1,11 @@
 import React from 'react';
 import Axios from 'axios';
 
+import useStyles from './App.s';
+
 const App = () => {
   const axios = Axios.create();
+  const s = useStyles();
 
   const app = () => {
     let app: string = 'app';
@@ -10,7 +13,7 @@ const App = () => {
     return app + '.';
   };
 
-  return <div>{app()}</div>;
+  return <div className={s.title}>{app()}</div>;
 };
 
 export default App;

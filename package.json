@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +33,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-jss": "^10.4.0"
   }
 }
