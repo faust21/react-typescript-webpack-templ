@@ -3,5 +3,6 @@
 * webpack
 * typescript
 * react
-* react-jss
+* react router
+* sass
 * axios

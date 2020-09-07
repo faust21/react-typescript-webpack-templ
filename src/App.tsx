@@ -1,19 +1,28 @@
 import React from 'react';
-import Axios from 'axios';
+import { Switch, Route, Link } from 'react-router-dom';
 
-import useStyles from './App.s';
+import { Header, Body } from './components';
+import { Page1, Page2 } from './pages';
 
 const App = () => {
-  const axios = Axios.create();
-  const s = useStyles();
-
-  const app = () => {
-    let app: string = 'app';
-
-    return app + '.';
-  };
-
-  return <div className={s.title}>{app()}</div>;
+  return (
+    <>
+      <Header />
+      <Body>
+        <div>app</div>
+        <div>
+          <Link to="/page1">to page1</Link>
+        </div>
+        <div>
+          <Link to="/page2">to page2</Link>
+        </div>
+        <Switch>
+          <Route path="/page1" component={Page1} />
+          <Route path="/page2" component={Page2} />
+        </Switch>
+      </Body>
+    </>
+  );
 };
 
 export default App;
