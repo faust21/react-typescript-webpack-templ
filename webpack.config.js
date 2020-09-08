@@ -18,6 +18,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.scss'],
+    alias: {
+      '@pages': path.resolve(__dirname, 'src/pages/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+    },
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
