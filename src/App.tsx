@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
-import { Header, Body } from './components';
-import { Page1, Page2 } from './pages';
+import { Header, Body } from '@components';
+import { Page1, Page2 } from '@pages';
 
 const App = () => {
   return (

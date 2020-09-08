@@ -5,9 +5,8 @@ const config = require('./webpack.config');
 
 module.exports = webpackMerge.merge(config, {
   mode: 'production',
-  devtool: 'source-map',
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[contenthash].js',
   },
   module: {
     rules: [
@@ -19,7 +18,7 @@ module.exports = webpackMerge.merge(config, {
   },
   plugins: [
     new miniCssExtractPlugin({
-      filename: '[name].[chunkhash].css',
+      filename: '[name].[contenthash].css',
     }),
   ],
 });

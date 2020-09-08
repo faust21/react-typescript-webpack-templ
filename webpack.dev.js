@@ -7,6 +7,8 @@ module.exports = webpackMerge.merge(config, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
+    clientLogLevel: 'trace',
+    historyApiFallback: true,
   },
   module: {
     rules: [

@@ -6,3 +6,5 @@
 * react router
 * sass
 * axios
+## deploy to nginx
+* ``` try_files $uri $uri/ /index.html =404 ```

@@ -44,15 +44,15 @@
         "*"
       ],
       "@pages": [
-        "src/pages"
+        "src/pages",
       ],
       "@pages/*": [
         "src/pages/*"
       ],
       "@components": [
-        "src/comonents"
+        "src/components"
       ],
-      "@comopnents/*": [
+      "@components/*": [
         "src/components/*"
       ],
     }, /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
